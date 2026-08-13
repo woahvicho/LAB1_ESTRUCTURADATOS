@@ -20,3 +20,24 @@ Thu Aug 13 09:31:46 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 1bbc8bd
+Thu Aug 13 09:39:34 PM UTC 2026: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:81:16: error: comparison between pointer and integer [-Werror]
+   81 |       if (dato == elem){
+      |                ^~
+exercises.c:83:10: error: implicit declaration of function ‘PopCurrent’; did you mean ‘popCurrent’? [-Wimplicit-function-declaration]
+   83 |          PopCurrent(L);
+      |          ^~~~~~~~~~
+      |          popCurrent
+exercises.c:90:11: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+   90 |    return L;
+      |           ^
+exercises.c:78:6: note: declared here
+   78 | void eliminaElementos(List*L, int elem){
+      |      ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+6d374eb
