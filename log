@@ -154,3 +154,43 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
    11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
       |                         ~~~~~~^~~~
 35b7f77
+Thu Aug 13 09:57:39 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:18: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  105 |       push(Paux, *elemento);
+      |                  ^~~~~~~~~
+      |                  |
+      |                  int
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:106:11: error: passing argument 1 of ‘pop’ from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |       pop(elemento);
+      |           ^~~~~~~~
+      |           |
+      |           int *
+stack.h:17:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘int *’
+   17 | void *pop(Stack *stack) { return popFront(stack); }
+      |           ~~~~~~~^~~~~
+exercises.c:109:18: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |       push(Paux, *elemento);
+      |                  ^~~~~~~~~
+      |                  |
+      |                  int
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:110:11: error: passing argument 1 of ‘pop’ from incompatible pointer type [-Wincompatible-pointer-types]
+  110 |       pop(elemento);
+      |           ^~~~~~~~
+      |           |
+      |           int *
+stack.h:17:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘int *’
+   17 | void *pop(Stack *stack) { return popFront(stack); }
+      |           ~~~~~~~^~~~~
+2b610e0
