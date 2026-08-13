@@ -77,3 +77,31 @@ Thu Aug 13 09:40:39 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 1b1fb71
+Thu Aug 13 09:56:36 PM UTC 2026: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:104:35: error: expected ‘)’ before ‘;’ token
+  104 |    while((elemento = (int*)top(P1);) != NULL){
+      |          ~                        ^
+      |                                   )
+exercises.c:105:19: error: ‘elemnto’ undeclared (first use in this function); did you mean ‘elemento’?
+  105 |       push(Paux, *elemnto);
+      |                   ^~~~~~~
+      |                   elemento
+exercises.c:105:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:106:11: error: ‘elementoP1’ undeclared (first use in this function); did you mean ‘elemento’?
+  106 |       pop(elementoP1);
+      |           ^~~~~~~~~~
+      |           elemento
+exercises.c:108:37: error: expected ‘)’ before ‘;’ token
+  108 |    while((elemento = (int*)top(Paux);) != NULL){
+      |          ~                          ^
+      |                                     )
+exercises.c:109:19: error: ‘elemntoP1’ undeclared (first use in this function); did you mean ‘elemento’?
+  109 |       push(Paux, *elemntoP1);
+      |                   ^~~~~~~~~
+      |                   elemento
+d93aa75
