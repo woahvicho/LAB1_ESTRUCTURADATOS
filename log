@@ -331,3 +331,39 @@ exercises.c:147:1: error: expected identifier or ‘(’ before ‘}’ token
   147 | }
       | ^
 02dd978
+Sat Aug 15 04:06:16 PM UTC 2026: 
+ exercises.c | 26 +++++++++-----------------
+ 1 file changed, 9 insertions(+), 17 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:28: error: expected expression before ‘:’ token
+  125 |    while(cadena[i] != '\0'):
+      |                            ^
+exercises.c:128:7: error: implicit declaration of function ‘elif’ [-Wimplicit-function-declaration]
+  128 |       elif (cadena[i] == ')'):
+      |       ^~~~
+exercises.c:128:30: error: expected ‘;’ before ‘:’ token
+  128 |       elif (cadena[i] == ')'):
+      |                              ^
+      |                              ;
+exercises.c:131:10: error: ‘else’ without a previous ‘if’
+  131 |          else:
+      |          ^~~~
+exercises.c:131:14: error: expected expression before ‘:’ token
+  131 |          else:
+      |              ^
+exercises.c:134:23: error: expected expression before ‘:’ token
+  134 |    if (top(P) == NULL):
+      |                       ^
+exercises.c:137:15: error: expected ‘;’ before ‘return’
+  137 |       return 0
+      |               ^
+      |               ;
+  138 |    return 0;
+      |    ~~~~~~      
+exercises.c:139:1: error: control reaches end of non-void function [-Werror=return-type]
+  139 | }
+      | ^
+cc1: all warnings being treated as errors
+22f4883
